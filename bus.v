@@ -18,7 +18,7 @@ module bus(
         output reg [15:0] bus
     );
 
-    always @(IM_read_en or AR_read_en or DR_read_en or DM_read_en or AC_read_en or R_read_en) begin
+    always @(IM_read_en or AR_read_en or DR_read_en or DM_read_en or AC_read_en or R_read_en or PC_out or AR_out or AC_out or R_out or DM_out or IM_out or DR_out) begin
         if (IM_read_en == 1'b1)
             assign bus = IM_out;
         if (DR_read_en == 1'b1)

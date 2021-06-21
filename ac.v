@@ -6,6 +6,7 @@ module AC(
     input alu_to_ac,
     input ac_clear,
     input [15:0] alu_out, //output from alu
+    
     output reg [15:0] data_out=16'd0
 );
 
